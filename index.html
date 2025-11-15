@@ -11,90 +11,53 @@
   <header class="site-hero">
     <div class="hero-inner">
       <div class="logo-wrap">
-        <!-- New elegant floral SVG logo -->
+        <!-- New modern logo -->
         <div class="logo-sig" aria-hidden>
           <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img">
             <defs>
-              <linearGradient id="lg2" x1="0" x2="1">
+              <linearGradient id="lgX" x1="0" x2="1">
                 <stop offset="0" stop-color="#B8860B"/>
                 <stop offset="1" stop-color="#FFD966"/>
               </linearGradient>
             </defs>
-            <rect width="120" height="120" rx="18" fill="url(#lg2)"/>
+            <rect width="120" height="120" rx="18" fill="url(#lgX)"/>
             <g transform="translate(20,18)">
               <path d="M40 18c6 0 10 4 10 10s-4 10-10 10-10-4-10-10 4-10 10-10z" fill="#fff"/>
               <path d="M40 44c12 0 22 6 26 16-6-4-14-6-22-6s-16 2-22 6c4-10 14-16 22-16z" fill="#fff" opacity="0.9"/>
             </g>
           </svg>
         </div>
+
         <div class="logo-text">
           <div class="brand">Abhi Events</div>
           <div class="tag">Moments Curated • Flowers & Décor</div>
         </div>
       </div>
 
-      <h1>We Make Every Moment Golden</h1>
+      <h1 class="hero-title">We Make Every Moment Golden</h1>
       <p class="lead">End-to-end event management • Floral & mandap décor • Corporate & private celebrations</p>
 
       <div class="cta">
         <button class="btn" onclick="scrollToEl('#book')">Book Now</button>
         <button class="btn ghost" onclick="scrollToEl('#gallery')">View Gallery</button>
+        <button class="btn ghost" onclick="scrollToEl('#ourworks')">Our Works</button>
       </div>
     </div>
   </header>
 
   <main class="container">
-    <section class="card services">
-      <h2>Our Signature Services</h2>
-      <p class="muted">From intimate gatherings to grand weddings — we design experiences that last.</p>
-      <div class="grid cols-3 services-grid">
-        <div class="service-item">
-          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=60" alt="Wedding & Mandap">
-          <strong>Weddings & Mandap</strong>
-        </div>
-        <div class="service-item">
-          <img src="https://images.unsplash.com/photo-1505576391880-0a0b6c6a0f1b?auto=format&fit=crop&w=1200&q=60" alt="Stage Decoration">
-          <strong>Stage Decoration</strong>
-        </div>
-        <div class="service-item">
-          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=60" alt="Pathway Decoration">
-          <strong>Pathway Decoration</strong>
-        </div>
-        <div class="service-item">
-          <img src="https://images.unsplash.com/photo-1508606572321-901ea443707f?auto=format&fit=crop&w=1200&q=60" alt="Entrance Board">
-          <strong>Marriage Entrance Board</strong>
-        </div>
-        <div class="service-item">
-          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=60" alt="Balloon Decoration">
-          <strong>Balloon Decoration (Birthday / Anniversary)</strong>
-        </div>
-        <div class="service-item">
-          <img src="https://images.unsplash.com/photo-1503342452485-86f7a627b9d9?auto=format&fit=crop&w=1200&q=60" alt="Flower Decoration">
-          <strong>Flower Decoration (Anniv / Haldi / Mehendi / Seemantham)</strong>
-        </div>
-        <div class="service-item">
-          <img src="https://images.unsplash.com/photo-1524504388940-6aa5b4765e20?auto=format&fit=crop&w=1200&q=60" alt="Naming Ceremony">
-          <strong>Naming Ceremony</strong>
-        </div>
-        <div class="service-item">
-          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=60" alt="Corporate Event">
-          <strong>Corporate Events</strong>
-        </div>
+    <section id="ourworks" class="card services">
+      <h2>Our Works</h2>
+      <p class="muted">Click any photo to enlarge</p>
+      <div class="services-grid" id="worksGrid">
+        <!-- populated from Firestore 'gallery' collection; defaults managed in script -->
       </div>
     </section>
 
     <section id="gallery" class="card">
       <h2>Gallery — Samples</h2>
-      <div class="gallery">
-        <figure><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Wedding Decoration</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1604014237800-1c3c4f1bd5e5?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Mantapa Decoration</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Stage Decoration</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Pathway Decoration</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Marriage Entrance Board</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1542452255191-c4e94e1f7c6d?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Balloon Decoration</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Anniv / Haldi / Mehendi</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1603032982512-5c66f9a7d22f?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Naming Ceremony</figcaption></figure>
-        <figure><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Corporate Event</figcaption></figure>
+      <div class="gallery" id="galleryGrid">
+        <!-- populated from Firestore -->
       </div>
     </section>
 
@@ -105,14 +68,12 @@
       <div class="rating-row">
         <div class="avg-rating" id="avgRating">4.9</div>
         <div class="stars" id="avgStars">★★★★★</div>
-        <div class="reviews-count muted" id="reviewsCount">(3 reviews)</div>
+        <div class="reviews-count muted" id="reviewsCount">(0 reviews)</div>
       </div>
 
       <div id="reviews" class="reviews-list">
-        <!-- Default old reviews shown on first load (replaced by Firestore snapshot) -->
+        <!-- sample reviews (keeps until Firestore real data loads) -->
         <div class="review"><strong>Priya</strong> <span class="muted">• 5/5</span><p>Beautiful decorations and prompt team, highly recommended!</p></div>
-        <div class="review"><strong>Ramesh</strong> <span class="muted">• 5/5</span><p>Perfect mandap and flawless coordination on the wedding day.</p></div>
-        <div class="review"><strong>Sneha</strong> <span class="muted">• 4.5/5</span><p>Loved the haldi and mehendi floral work — vibrant and tasteful.</p></div>
       </div>
 
       <div class="add-review">
@@ -125,6 +86,7 @@
           <option value="2">2 — Fair</option>
           <option value="1">1 — Poor</option>
         </select>
+        <input id="reviewPhoto" type="file" accept="image/*">
         <textarea id="reviewText" placeholder="Write your review..."></textarea>
         <div class="rev-actions"><button class="btn" id="submitReview">Submit Review</button></div>
       </div>
@@ -155,29 +117,51 @@
     </div>
   </footer>
 
-  <!-- WhatsApp floating (icon only) -->
+  <!-- WhatsApp floating (icon only) - right corner -->
   <a id="waFloat" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
 
-  <!-- Admin panel (hidden default) -->
+  <!-- Admin panel (hidden default) on left -->
   <div class="admin-panel card" id="adminPanel" style="display:none;">
     <div style="display:flex;justify-content:space-between;align-items:center">
       <div style="font-weight:700">Admin</div>
       <button id="closeAdmin" class="btn" style="background:#777;padding:6px 10px">Close</button>
     </div>
+
     <div style="margin-top:8px"><input id="adminEmail" placeholder="admin email" style="width:100%;margin-bottom:8px" /></div>
     <div><input id="adminPass" type="password" placeholder="password" style="width:100%" /></div>
-    <div style="margin-top:8px;display:flex;gap:8px"><button id="adminLogin" class="btn" style="padding:8px 12px">Sign in</button><button id="adminSignOut" class="btn" style="background:#777;padding:8px 12px">Sign out</button></div>
+    <div style="margin-top:8px;display:flex;gap:8px">
+      <button id="adminLogin" class="btn" style="padding:8px 12px">Sign in</button>
+      <button id="adminSignOut" class="btn" style="background:#777;padding:8px 12px">Sign out</button>
+    </div>
     <div style="margin-top:8px;font-size:0.9rem;color:#666">Signed in as: <span id="adminUser">Not signed in</span></div>
+
+    <hr style="margin:12px 0" />
+
+    <div>
+      <h4>Upload Gallery Image</h4>
+      <input id="galleryFile" type="file" accept="image/*">
+      <input id="galleryCaption" placeholder="Caption (e.g. Wedding Decoration)">
+      <button id="uploadGalleryBtn" class="btn" style="margin-top:8px">Upload to Gallery</button>
+    </div>
+
+    <div style="margin-top:12px">
+      <h4>Upload Service Image</h4>
+      <input id="serviceFile" type="file" accept="image/*">
+      <input id="serviceTitle" placeholder="Service Title (e.g. Stage Decoration)">
+      <button id="uploadServiceBtn" class="btn" style="margin-top:8px">Upload to Services</button>
+    </div>
+
     <div id="adminControls" style="margin-top:12px"></div>
   </div>
 
-  <!-- Admin icon -->
-  <a id="adminIcon" title="Admin" aria-label="Admin" style="position:fixed;right:18px;bottom:18px;background:linear-gradient(135deg,#B8860B,#FFD966);color:#000;padding:12px;border-radius:50%;box-shadow:0 8px 20px rgba(0,0,0,0.18);z-index:999;font-size:20px;text-decoration:none;display:flex;align-items:center;justify-content:center">⚙️</a>
+  <!-- Admin icon left -->
+  <a id="adminIcon" title="Admin" aria-label="Admin" style="position:fixed;left:18px;bottom:18px;background:linear-gradient(135deg,#B8860B,#FFD966);color:#000;padding:12px;border-radius:50%;box-shadow:0 8px 20px rgba(0,0,0,0.18);z-index:999;font-size:20px;text-decoration:none;display:flex;align-items:center;justify-content:center">⚙️</a>
 
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-storage-compat.js"></script>
   <script src="script.js"></script>
 </body>
-  </html>
-  
+        </html>
+        

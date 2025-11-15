@@ -168,4 +168,4 @@ function enableAdminMode(user) {
 function disableAdminMode() {
   const btn = document.getElementById('manageBookings'); if (btn) btn.remove();
   attachAdminControls();
-}
+                       }

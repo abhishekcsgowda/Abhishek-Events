@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abhi Events – Premium Event Organizers</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-hero">
+    <div class="hero-inner">
+      <div class="logo-wrap">
+        <div class="logo-sig" aria-hidden>
+          <!-- Premium Gold Luxury SVG Mark -->
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#B8860B" />
+                <stop offset="1" stop-color="#FFD966" />
+              </linearGradient>
+            </defs>
+            <rect x="4" y="4" width="92" height="92" rx="16" fill="url(#g1)" />
+            <path d="M30 62c8-12 20-18 34-12" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
+            <circle cx="46" cy="36" r="10" fill="#fff" opacity="0.95"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <div class="brand">Abhi Events</div>
+          <div class="tag">Premium Event Organizers</div>
+        </div>
+      </div>
+
+      <h1>We Make Every Moment Golden</h1>
+      <p class="lead">End-to-end event management • Floral & mandap décor • Corporate & private celebrations</p>
+
+      <div class="cta">
+        <button class="btn" onclick="scrollToEl('#book')">Book Now</button>
+        <button class="btn ghost" onclick="scrollToEl('#gallery')">View Gallery</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card services">
+      <h2>Our Signature Services</h2>
+      <p class="muted">From intimate gatherings to grand weddings — we design experiences that last.</p>
+      <div class="grid cols-3">
+        <div class="service"><div class="icon">🎪</div><div><strong>Weddings & Mandap</strong><div class="muted">Full venue design, mandap, floral stage décor, lighting & coordination.</div></div></div>
+        <div class="service"><div class="icon">🎉</div><div><strong>Birthday & Parties</strong><div class="muted">Theme curation, balloon art, cake table styling & entertainment.</div></div></div>
+        <div class="service"><div class="icon">🏛️</div><div><strong>Corporate Events</strong><div class="muted">Product launches, seminars, branding & stage setup.</div></div></div>
+        <div class="service"><div class="icon">👶</div><div><strong>Naming Ceremonies</strong><div class="muted">Cradle setups and family-centered designs.</div></div></div>
+        <div class="service"><div class="icon">💐</div><div><strong>Flower Decoration</strong><div class="muted">Fresh floral arrangements, entry arches, car décor & table styling.</div></div></div>
+        <div class="service"><div class="icon">📸</div><div><strong>Photography & Video</strong><div class="muted">Professional photo + video packages to capture every moment.</div></div></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="card">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=60" alt="">
+        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=60" alt="">
+        <img src="https://images.unsplash.com/photo-1527904219733-fddc749fef50?auto=format&fit=crop&w=800&q=60" alt="">
+        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=60" alt="">
+      </div>
+    </section>
+
+    <section id="book" class="card">
+      <h2>Book an Event</h2>
+      <p class="muted">Fill the form — we’ll reach out within 12 hours.</p>
+
+      <form id="bookingForm">
+        <div class="row">
+          <input id="customerName" placeholder="Full name" required />
+          <input id="customerPhone" placeholder="Phone number" required />
+        </div>
+        <div class="row" style="margin-top:12px">
+          <input id="eventType" placeholder="Event type (Wedding / Birthday / Corporate)" required />
+          <input id="eventDate" type="date" required />
+        </div>
+        <textarea id="eventNotes" placeholder="Any special requests or notes"></textarea>
+        <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
+          <button type="submit" class="btn">Submit Booking</button>
+          <div id="bookingStatus" class="muted" style="font-size:0.95rem"></div>
+        </div>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Customer Reviews</h2>
+      <p class="muted">Real feedback from our clients.</p>
+
+      <div style="display:flex;gap:12px;margin:12px 0;flex-wrap:wrap">
+        <input id="reviewName" placeholder="Your name" style="flex:1;min-width:180px" />
+        <input id="reviewPhone" placeholder="Phone (optional)" style="width:180px" />
+      </div>
+      <textarea id="reviewText" placeholder="Write your review..." style="width:100%"></textarea>
+      <div style="margin-top:8px"><button id="submitReview" class="btn">Submit Review</button></div>
+
+      <div style="margin-top:18px">
+        <div id="reviews" class="reviews-list"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="brand">Abhi Events</div>
+    <div class="muted">Ramanagara, Karnataka — 918548945231 & abhishekcsgowda736@gmail.com</div>
+    <div style="margin-top:8px;font-size:0.9rem;color:#9b9b9b">© <span id="year"></span> Abhi Events</div>
+  </footer>
+
+  <!-- Floating WhatsApp (opens chat to owner phone when clicked) -->
+  <a id="waFloat" class="floating-whatsapp" target="_blank" rel="noopener">📲 Message Us</a>
+
+  <!-- Admin quick panel -->
+  <div class="admin-panel card">
+    <div style="font-weight:700">Admin</div>
+    <div style="margin-top:8px"><input id="adminEmail" placeholder="admin email" style="width:100%;margin-bottom:8px" /></div>
+    <div><input id="adminPass" type="password" placeholder="password" style="width:100%" /></div>
+    <div style="margin-top:8px;display:flex;gap:8px"><button id="adminLogin" class="btn" style="padding:8px 12px">Sign in</button><button id="adminSignOut" class="btn" style="background:#777;padding:8px 12px">Sign out</button></div>
+    <div style="margin-top:8px;font-size:0.9rem;color:#666">Signed in as: <span id="adminUser">Not signed in</span></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

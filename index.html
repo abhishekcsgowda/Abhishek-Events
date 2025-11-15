@@ -11,23 +11,25 @@
   <header class="site-hero">
     <div class="hero-inner">
       <div class="logo-wrap">
+        <!-- New elegant floral SVG logo -->
         <div class="logo-sig" aria-hidden>
-          <!-- Premium Gold Luxury SVG Mark -->
-          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img">
             <defs>
-              <linearGradient id="g1" x1="0" x2="1">
-                <stop offset="0" stop-color="#B8860B" />
-                <stop offset="1" stop-color="#FFD966" />
+              <linearGradient id="lg2" x1="0" x2="1">
+                <stop offset="0" stop-color="#B8860B"/>
+                <stop offset="1" stop-color="#FFD966"/>
               </linearGradient>
             </defs>
-            <rect x="4" y="4" width="92" height="92" rx="16" fill="url(#g1)" />
-            <path d="M30 62c8-12 20-18 34-12" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.95"/>
-            <circle cx="46" cy="36" r="10" fill="#fff" opacity="0.95"/>
+            <rect width="120" height="120" rx="18" fill="url(#lg2)"/>
+            <g transform="translate(20,18)">
+              <path d="M40 18c6 0 10 4 10 10s-4 10-10 10-10-4-10-10 4-10 10-10z" fill="#fff"/>
+              <path d="M40 44c12 0 22 6 26 16-6-4-14-6-22-6s-16 2-22 6c4-10 14-16 22-16z" fill="#fff" opacity="0.9"/>
+            </g>
           </svg>
         </div>
         <div class="logo-text">
           <div class="brand">Abhi Events</div>
-          <div class="tag">Premium Event Organizers</div>
+          <div class="tag">Moments Curated • Flowers & Décor</div>
         </div>
       </div>
 
@@ -45,82 +47,132 @@
     <section class="card services">
       <h2>Our Signature Services</h2>
       <p class="muted">From intimate gatherings to grand weddings — we design experiences that last.</p>
-      <div class="grid cols-3">
-        <div class="service"><div class="icon">🎪</div><div><strong>Weddings & Mandap</strong><div class="muted">Full venue design, mandap, floral stage décor, lighting & coordination.</div></div></div>
-        <div class="service"><div class="icon">🎉</div><div><strong>Birthday & Parties</strong><div class="muted">Theme curation, balloon art, cake table styling & entertainment.</div></div></div>
-        <div class="service"><div class="icon">🏛️</div><div><strong>Corporate Events</strong><div class="muted">Product launches, seminars, branding & stage setup.</div></div></div>
-        <div class="service"><div class="icon">👶</div><div><strong>Naming Ceremonies</strong><div class="muted">Cradle setups and family-centered designs.</div></div></div>
-        <div class="service"><div class="icon">💐</div><div><strong>Flower Decoration</strong><div class="muted">Fresh floral arrangements, entry arches, car décor & table styling.</div></div></div>
-        <div class="service"><div class="icon">📸</div><div><strong>Photography & Video</strong><div class="muted">Professional photo + video packages to capture every moment.</div></div></div>
+      <div class="grid cols-3 services-grid">
+        <!-- Use images that match each service and won't be cut off -->
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=60" alt="Wedding & Mandap">
+          <strong>Weddings & Mandap</strong>
+        </div>
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1505576391880-0a0b6c6a0f1b?auto=format&fit=crop&w=1200&q=60" alt="Stage Decoration">
+          <strong>Stage Decoration</strong>
+        </div>
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1200&q=60" alt="Pathway Decoration">
+          <strong>Pathway Decoration</strong>
+        </div>
+
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1508606572321-901ea443707f?auto=format&fit=crop&w=1200&q=60" alt="Entrance Board">
+          <strong>Marriage Entrance Board</strong>
+        </div>
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=60" alt="Balloon Decoration">
+          <strong>Balloon Decoration (Birthday / Anniversary)</strong>
+        </div>
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1503342452485-86f7a627b9d9?auto=format&fit=crop&w=1200&q=60" alt="Flower Decoration">
+          <strong>Flower Decoration (Anniv / Haldi / Mehendi / Seemantham)</strong>
+        </div>
+
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1524504388940-6aa5b4765e20?auto=format&fit=crop&w=1200&q=60" alt="Naming Ceremony">
+          <strong>Naming Ceremony</strong>
+        </div>
+        <div class="service-item">
+          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=60" alt="Corporate Event">
+          <strong>Corporate Events</strong>
+        </div>
       </div>
     </section>
 
     <section id="gallery" class="card">
-      <h2>Gallery</h2>
+      <h2>Gallery — Samples</h2>
       <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=60" alt="">
-        <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=60" alt="">
-        <img src="https://images.unsplash.com/photo-1527904219733-fddc749fef50?auto=format&fit=crop&w=800&q=60" alt="">
-        <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=60" alt="">
+        <figure><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Wedding Decoration</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1604014237800-1c3c4f1bd5e5?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Mantapa Decoration</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1541532713592-79a0317b6b77?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Stage Decoration</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Pathway Decoration</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Marriage Entrance Board</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1542452255191-c4e94e1f7c6d?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Balloon Decoration</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Anniv / Haldi / Mehendi Flowers</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1603032982512-5c66f9a7d22f?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Naming Ceremony</figcaption></figure>
+        <figure><img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1400&q=60" alt=""><figcaption>Corporate Event</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="card reviews-card">
+      <h2>What Our Customers Say</h2>
+      <p class="muted">Real reviews from our clients — average rating shown.</p>
+
+      <div class="rating-row">
+        <div class="avg-rating" id="avgRating">4.9</div>
+        <div class="stars" id="avgStars">★★★★★</div>
+        <div class="reviews-count muted" id="reviewsCount">(3 reviews)</div>
+      </div>
+
+      <div id="reviews" class="reviews-list">
+        <!-- Default old reviews shown on first load (replaced by Firestore snapshot) -->
+        <div class="review"><strong>Priya</strong> <span class="muted">• 5/5</span><p>Beautiful decorations and prompt team, highly recommended!</p></div>
+        <div class="review"><strong>Ramesh</strong> <span class="muted">• 5/5</span><p>Perfect mandap and flawless coordination on the wedding day.</p></div>
+        <div class="review"><strong>Sneha</strong> <span class="muted">• 4.5/5</span><p>Loved the haldi and mehendi floral work — vibrant and tasteful.</p></div>
+      </div>
+
+      <div class="add-review">
+        <input id="revName" placeholder="Your name (optional)">
+        <select id="revRating">
+          <option value="5">5 — Excellent</option>
+          <option value="4">4 — Very good</option>
+          <option value="3">3 — Good</option>
+          <option value="2">2 — Fair</option>
+          <option value="1">1 — Poor</option>
+        </select>
+        <textarea id="revText" placeholder="Write your review..."></textarea>
+        <div class="rev-actions"><button class="btn primary" id="submitReviewBtn">Submit Review</button></div>
       </div>
     </section>
 
     <section id="book" class="card">
       <h2>Book an Event</h2>
-      <p class="muted">Fill the form — we’ll reach out within 12 hours.</p>
-
-      <form id="bookingForm">
-        <div class="row">
-          <input id="customerName" placeholder="Full name" required />
-          <input id="customerPhone" placeholder="Phone number" required />
-        </div>
-        <div class="row" style="margin-top:12px">
-          <input id="eventType" placeholder="Event type (Wedding / Birthday / Corporate)" required />
-          <input id="eventDate" type="date" required />
-        </div>
-        <textarea id="eventNotes" placeholder="Any special requests or notes"></textarea>
-        <div style="margin-top:12px;display:flex;gap:10px;align-items:center">
-          <button type="submit" class="btn">Submit Booking</button>
-          <div id="bookingStatus" class="muted" style="font-size:0.95rem"></div>
-        </div>
-      </form>
-    </section>
-
-    <section class="card">
-      <h2>Customer Reviews</h2>
-      <p class="muted">Real feedback from our clients.</p>
-
-      <div style="display:flex;gap:12px;margin:12px 0;flex-wrap:wrap">
-        <input id="reviewName" placeholder="Your name" style="flex:1;min-width:180px" />
-        <input id="reviewPhone" placeholder="Phone (optional)" style="width:180px" />
+      <p class="muted">Fill in basic details and we'll contact you within 12 hours.</p>
+      <div class="form-grid">
+        <input id="bkName" placeholder="Full name">
+        <input id="bkPhone" placeholder="Phone number">
+        <input id="bkType" placeholder="Event type (Wedding / Birthday / Corporate)">
+        <input id="bkDate" type="date">
       </div>
-      <textarea id="reviewText" placeholder="Write your review..." style="width:100%"></textarea>
-      <div style="margin-top:8px"><button id="submitReview" class="btn">Submit Review</button></div>
-
-      <div style="margin-top:18px">
-        <div id="reviews" class="reviews-list"></div>
-      </div>
+      <textarea id="bkNotes" placeholder="Any notes or requests"></textarea>
+      <div style="margin-top:12px"><button class="btn primary" id="submitBookingBtn">Submit Booking</button></div>
+      <div class="muted" id="bookingStatus"></div>
     </section>
 
   </main>
 
-  <footer>
-    <div class="brand">Abhi Events</div>
-    <div class="muted">Ramanagara, Karnataka — 918548945231 & abhishekcsgowda736@gmail.com</div>
-    <div style="margin-top:8px;font-size:0.9rem;color:#9b9b9b">© <span id="year"></span> Abhi Events</div>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="brand">Abhi Events</div>
+      <div class="muted">Ramanagara, Karnataka • 918548945231 • abhishekcsgowda736@gmail.com</div>
+    </div>
   </footer>
 
-  <!-- Floating WhatsApp (opens chat to owner phone when clicked) -->
+  <!-- WhatsApp floating -->
   <a id="waFloat" class="floating-whatsapp" target="_blank" rel="noopener">📲 Message Us</a>
 
-  <!-- Admin quick panel -->
-  <div class="admin-panel card">
-    <div style="font-weight:700">Admin</div>
+  <!-- Admin panel hidden by default; opened by admin icon -->
+  <div class="admin-panel card" id="adminPanel" style="display:none;">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div style="font-weight:700">Admin</div>
+      <button id="closeAdmin" class="btn" style="background:#777;padding:6px 10px">Close</button>
+    </div>
     <div style="margin-top:8px"><input id="adminEmail" placeholder="admin email" style="width:100%;margin-bottom:8px" /></div>
     <div><input id="adminPass" type="password" placeholder="password" style="width:100%" /></div>
     <div style="margin-top:8px;display:flex;gap:8px"><button id="adminLogin" class="btn" style="padding:8px 12px">Sign in</button><button id="adminSignOut" class="btn" style="background:#777;padding:8px 12px">Sign out</button></div>
     <div style="margin-top:8px;font-size:0.9rem;color:#666">Signed in as: <span id="adminUser">Not signed in</span></div>
+    <div id="adminControls" style="margin-top:12px"></div>
   </div>
+
+  <!-- Admin icon -->
+  <a id="adminIcon" title="Admin" aria-label="Admin" style="position:fixed;right:18px;bottom:18px;background:linear-gradient(135deg,#B8860B,#FFD966);color:#000;padding:12px;border-radius:50%;box-shadow:0 8px 20px rgba(0,0,0,0.18);z-index:999;font-size:20px;">⚙️</a>
 
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
